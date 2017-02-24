@@ -1,0 +1,1 @@
+{"version":3,"file":"product-list.component.js","sourceRoot":"","sources":["product-list.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAM1C,IAAa,oBAAoB;IAJjC;QAKI,cAAS,GAAW,kCAAkC,CAAA;IAC1D,CAAC;IAAD,2BAAC;AAAD,CAAC,AAFD,IAEC;AAFY,oBAAoB;IAJhC,gBAAS,CAAC;QACP,QAAQ,EAAE,aAAa;QACvB,WAAW,EAAE,2CAA2C;KAC3D,CAAC;GACW,oBAAoB,CAEhC;AAFY,oDAAoB"}
