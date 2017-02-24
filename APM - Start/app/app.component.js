@@ -9,13 +9,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
+        this.framework = "Angular2:";
+        this.action = "Getting Started";
+        this.number = 0;
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.number = 1;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\n        <h1>Angular2: Getting Started</h1>\n    "
+        template: "\n        <h1>\n        {{framework}}{{action}}.\n        <br>\n        My app number {{number}}:)</h1>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
