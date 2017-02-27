@@ -1,7 +1,23 @@
-<h1>
-    {{framework}}{{action}}.
+<!--<h1>-->
+    <!--{{framework}}{{action}}.
     <br>
-    My app number {{number}}:)
+    My app number {{number}}:)-->
 
-    <pm-products>hiya</pm-products>
-</h1>
+    <!--<pm-products>hiya</pm-products>-->
+<!--</h1>-->
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand">{{framework}}</a>
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/welcome']">Home</a></li>
+                <li><a [routerLink]="['/products']">Product</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'pm-app',
-    templateUrl: 'app/app.component.html'
+    templateUrl: 'app/app.component.html',
+    // providers: [ProductService]
 })
 export class AppComponent implements OnInit {
     framework : string = "Angular2:";

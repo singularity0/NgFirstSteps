@@ -7,22 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.framework = "Angular2:";
-        this.action = "Getting Started";
-        this.number = 0;
+var ProductDetailComponent = (function () {
+    function ProductDetailComponent() {
+        this.pageTitle = "PageDetailTitles";
     }
-    AppComponent.prototype.ngOnInit = function () {
-        this.number = 1;
-    };
-    return AppComponent;
+    return ProductDetailComponent;
 }());
-AppComponent = __decorate([
+ProductDetailComponent = __decorate([
     core_1.Component({
-        selector: 'pm-app',
-        templateUrl: 'app/app.component.html',
+        moduleId: module.id,
+        selector: 'prodict-detail',
+        templateUrl: 'product-detail.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ProductDetailComponent);
+exports.ProductDetailComponent = ProductDetailComponent;
+//# sourceMappingURL=product-detail.component.js.map

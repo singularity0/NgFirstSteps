@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { IProduct } from './products';
 
 @Component({
+    moduleId: module.id,
     selector: 'pm-products',
-    templateUrl: 'app/products/product-list.componenet.html',
-    styleUrls: ['app/products/product-list.component.css']
+    templateUrl: 'product-list.componenet.html',
+    styleUrls: ['product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = "My list with my products. My my my";
