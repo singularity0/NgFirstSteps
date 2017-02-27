@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var ProductListComponent = (function () {
     function ProductListComponent() {
-        this.pageTitle = "My list with my products. Mymymy";
+        this.pageTitle = "My list with my products. My my my";
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.imageShown = false;
@@ -70,12 +70,16 @@ var ProductListComponent = (function () {
     ProductListComponent.prototype.toggleImage = function () {
         this.imageShown = !this.imageShown;
     };
+    ProductListComponent.prototype.ngOnInit = function () {
+        console.log('On init');
+    };
     return ProductListComponent;
 }());
 ProductListComponent = __decorate([
     core_1.Component({
         selector: 'pm-products',
-        templateUrl: 'app/products/product-list.componenet.html'
+        templateUrl: 'app/products/product-list.componenet.html',
+        styleUrls: ['app/products/product-list.component.css']
     })
 ], ProductListComponent);
 exports.ProductListComponent = ProductListComponent;
