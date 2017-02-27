@@ -5,12 +5,14 @@
 
     <div class='panel-body'>
         <div class='row'>
-            <div class='col-md-2'>
+            <div class='col-md-6'>
                 <div class='row'>
-                    <div class='col-md-4'>Filter by:
+                    <div class='<col-md-6></col-md-2>'>Filter by:
                     </div>
                     <div class='col-md-6'>
-                        <input type="text" name="" value="">
+                        <input type="text"
+                            [(ngModel)]='listFilter'
+                            name="" value="">
                     </div>
                 </div>
 
@@ -18,12 +20,19 @@
         </div>
 
         <div class="container">
+
   <h2>Table</h2>
 
   <div class="table-responsive">
   <table class="table">
     <thead>
+        <th>
+            <button class="btn btn-primary" type=""
+                (click) = "toggleImage()">
+                {{imageShown ? 'Hide' :'Show'}} Images</button>
+        </th>
       <tr>
+
         <th>ProductName</th>
         <th>productCode</th>
         <th>releaseDate</th>
@@ -35,13 +44,18 @@
     </thead>
     <tbody>
       <tr *ngFor='let product of products'>
-        <td>{{product.productName}}</td>
+        <td>{{product.productName | uppercase | lowercase}}</td>
         <td>{{product.productCode}}</td>
         <td>{{product.releaseDate}}</td>
-        <td>{{product.price}}</td>
+        <td>{{product.price | currency:'USD':true:'1.2-2'}}</td>
         <td>{{product.starRating}}</td>
-        <td>{{product.imageUrl}}</td>
-
+        <td><img *ngIf='imageShown'
+             [src]='product.imageUrl'
+             [alt]='product.productName'
+             [title]='product.productName'
+             [style.width.px]='imageWidth'
+             [style.margin.px]='imageMargin'
+             ></td>
       </tr>
     </tbody>
   </table>
@@ -52,7 +66,7 @@
         <div class='row'>
             <div class='col-md-6'>
                 <div class='row'>
-                    <h3>Filtered by:</h3>
+                    <h3>Filtered by: {{listFilter}}</h3>
                 </div>
 
             </div>
