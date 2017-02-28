@@ -9,6 +9,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 import {RouterModule} from '@angular/router';
 import { StarComponenet } from './shared/star.component';
+import {HttpModule} from '@angular/http';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { StarComponenet } from './shared/star.component';
       {path: 'welcome', component: WelcomeComponent},
       {path: '', redirectTo: 'welcome', pathMatch: 'full'},
       {path: '**', redirectTo: 'welcome', pathMatch:'full'}
-    ])
+    ]),
+    HttpModule
     ],
   declarations: [
     AppComponent,

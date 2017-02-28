@@ -16,6 +16,7 @@ var product_detail_component_1 = require("./products/product-detail.component");
 var welcome_component_1 = require("./home/welcome.component");
 var router_1 = require("@angular/router");
 var star_component_1 = require("./shared/star.component");
+var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +33,8 @@ AppModule = __decorate([
                 { path: 'welcome', component: welcome_component_1.WelcomeComponent },
                 { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                 { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
-            ])
+            ]),
+            http_1.HttpModule
         ],
         declarations: [
             app_component_1.AppComponent,
