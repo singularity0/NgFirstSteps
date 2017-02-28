@@ -22,6 +22,10 @@ export class ProductListComponent implements OnInit {
         console.log('On init')
     }
 
+    onNotify(message : string){
+        this.pageTitle = 'Prod List' + message;
+    }
+
     products: IProduct[] =
     [
     {

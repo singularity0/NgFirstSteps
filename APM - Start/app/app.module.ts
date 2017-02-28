@@ -8,6 +8,7 @@ import { ProductFilterPipe } from './products/product-filter.pipe';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 import {RouterModule} from '@angular/router';
+import { StarComponenet } from './shared/star.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import {RouterModule} from '@angular/router';
     ProductDetailComponent,
     WelcomeComponent,
     ProductListComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    StarComponenet
      ],
   bootstrap: [ AppComponent ]
 })
