@@ -73,6 +73,9 @@ var ProductListComponent = (function () {
     ProductListComponent.prototype.ngOnInit = function () {
         console.log('On init');
     };
+    ProductListComponent.prototype.onNotify = function (message) {
+        this.pageTitle = 'Prod List' + message;
+    };
     return ProductListComponent;
 }());
 ProductListComponent = __decorate([

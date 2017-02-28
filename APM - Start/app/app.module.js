@@ -15,6 +15,7 @@ var product_filter_pipe_1 = require("./products/product-filter.pipe");
 var product_detail_component_1 = require("./products/product-detail.component");
 var welcome_component_1 = require("./home/welcome.component");
 var router_1 = require("@angular/router");
+var star_component_1 = require("./shared/star.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,7 +39,8 @@ AppModule = __decorate([
             product_detail_component_1.ProductDetailComponent,
             welcome_component_1.WelcomeComponent,
             product_list_component_1.ProductListComponent,
-            product_filter_pipe_1.ProductFilterPipe
+            product_filter_pipe_1.ProductFilterPipe,
+            star_component_1.StarComponenet
         ],
         bootstrap: [app_component_1.AppComponent]
     })
